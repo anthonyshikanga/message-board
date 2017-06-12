@@ -1,0 +1,12 @@
+{{new-question saveQuiz='saveQuestion'}}
+<hr>
+<h2>Questions</h2>
+{{#each model as |item|}}
+	{{#link-to 'details' item.id}}
+	By {{item.author}}
+	<br>
+	{{item.content}}
+	<br>
+    {{/link-to}}
+{{/each}}
+{{outlet}}

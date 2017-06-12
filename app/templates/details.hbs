@@ -1,0 +1,9 @@
+{{model.content}}<br>
+By {{model.author}}
+<hr>
+<h2>Answers</h2>
+{{new-answer questiontouse=model answerSave='saveMyAnswerNow'}}
+{{#each model.answers as |answer|}}
+	{{answer.content}} Answered by {{answer.author}} {{answer.rating}} <br>
+{{/each}}
+{{outlet}}

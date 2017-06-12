@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'message',
+    modulePrefix: 'message-board',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -11,6 +11,14 @@ module.exports = function(environment) {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       },
+	  firebase: {
+      apiKey: "AIzaSyDQP92iHOx3qV9MoPisk0wuEG6fJminD-c",
+      authDomain: "message-board-67d70.firebaseapp.com",
+      databaseURL: "https://message-board-67d70.firebaseio.com",
+      storageBucket: "message-board-67d70.appspot.com",
+    },
+
+
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false

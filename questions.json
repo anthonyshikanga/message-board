@@ -1,0 +1,17 @@
+{ "questions": [{
+    "Author": "Vic stathem",
+    "content": "Why is the impedance of a resistor the same in time and frequency domains if the Laplace transform of a constant is not the same constant?",
+    "notes": ""
+    
+  }, {
+    "Author": "Mike Angelo",
+    "content": "how do i run multiple spark application on different worker nodes in standlone mode?",
+    "notes": ""
+ 
+  }, {
+    "Author": "Roney 2000",
+    "content": "Was pink a boy color and blue a girl color prior to the 20th century?",
+    "notes": ""
+    
+  }]
+}

@@ -1,21 +1,26 @@
-<h1> Welcome to Chat room </h1>
+<h1> Welcome to the Chat room </h1>
 
+We hope you get answers to all your questions.
 
-
-<h3>What's on your mind...</h3>
-
-
+<h2> Questions Asked </h2>
 
 <ul>
-
-  {{#each model as |question|}}
-
-     <li>{{question.content}} {{question.author}} {{question.notes}}</li>
-
-  {{/each}}
-
+  {{#each model.questions as |question|}}
+    {{question-tile question=question}}
+  {{/each}} 
 </ul>
 
+{{new-question saveQuestion2="saveQuestion3"}}
 
+<h2> All Answers </h2>
 
-{{#link-to 'about'}}About{{/link-to}}{{outlet}}
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.content}} - by {{answer.author}}</li>
+  {{/each}}
+</ul>
+
+<hr>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}

@@ -1,0 +1,14 @@
+{{#if showAnswerForm}}
+	<form>
+		<label>author</label>
+		{{input value=author id="author"}}
+		<label>Answer</label>
+		{{input value=content id="content"}}
+		<label>Rating</label>
+		{{input value=rating id="rating"}}
+		<button {{action "saveAnswer"}}>save</button>
+	</form>
+{{else}}
+	<button class="btn" {{action "answerQuestion"}}>Answer</button>
+{{/if}}
+{{yield}}
